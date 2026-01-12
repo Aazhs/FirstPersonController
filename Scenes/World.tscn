@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://db2h3t17k37pe"]
+[gd_scene load_steps=27 format=3 uid="uid://db2h3t17k37pe"]
 
 [ext_resource type="Script" uid="uid://bspbgfgsn4h5y" path="res://Scripts/Player.gd" id="1_1d73w"]
 [ext_resource type="Script" uid="uid://twibitj1v72e" path="res://Scripts/label.gd" id="6_45d1s"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c1vwcdcdvb74a" path="res://addons/sky_3d/assets/thirdparty/textures/milkyway/Milkyway.jpg" id="13_w0bku"]
 [ext_resource type="Script" uid="uid://deo0gxkmk2ahd" path="res://addons/sky_3d/src/Sky3D.gd" id="14_0ao37"]
 [ext_resource type="Script" uid="uid://ccxw2cc2mpkl8" path="res://addons/infinite_heightmap_terrain/infinite_terrain.gd" id="14_8l3nt"]
+[ext_resource type="Texture2D" uid="uid://dxhmood0fkku1" path="res://icon.svg" id="14_kwl8l"]
 [ext_resource type="Script" uid="uid://b4tkplvh7fq40" path="res://addons/sky_3d/src/SkyDome.gd" id="15_d3ars"]
 [ext_resource type="Script" uid="uid://cjmkcj8hwm7ts" path="res://addons/sky_3d/src/TimeOfDay.gd" id="16_l11rc"]
 
@@ -49,7 +50,7 @@ shader_parameter/moon_texture_flip_u = false
 shader_parameter/moon_texture_flip_v = false
 shader_parameter/moon_size = 0.07
 shader_parameter/atm_moon_mie_tint = Color(0.137255, 0.184314, 0.292196, 1)
-shader_parameter/atm_moon_mie_intensity = 0.12106081902980803
+shader_parameter/atm_moon_mie_intensity = 0.05495101571083068
 shader_parameter/atm_moon_partial_mie_phase = Vector3(0.36, 1.64, 1.6)
 shader_parameter/starmap_color = Color(0.709804, 0.709804, 0.709804, 0.854902)
 shader_parameter/starmap_texture = ExtResource("13_w0bku")
@@ -73,8 +74,8 @@ shader_parameter/cirrus_absorption = 2.0
 shader_parameter/cirrus_sky_tint_fade = 0.5
 shader_parameter/cirrus_size = 1.0
 shader_parameter/cirrus_uv = Vector2(0.16, 0.11)
-shader_parameter/cirrus_position1 = Vector2(0.42311582, 0.42311582)
-shader_parameter/cirrus_position2 = Vector2(0.42311582, 0.42311582)
+shader_parameter/cirrus_position1 = Vector2(0.22558646, 0.22558646)
+shader_parameter/cirrus_position2 = Vector2(0.22558646, 0.22558646)
 shader_parameter/cirrus_texture = ExtResource("8_waglr")
 shader_parameter/cumulus_visible = true
 shader_parameter/cumulus_intensity = 0.6
@@ -84,7 +85,7 @@ shader_parameter/cumulus_absorption = 2.0
 shader_parameter/cumulus_noise_freq = 2.7
 shader_parameter/cumulus_sky_tint_fade = 0.0
 shader_parameter/cumulus_size = 0.5
-shader_parameter/cumulus_position = Vector2(12.066581, 12.066581)
+shader_parameter/cumulus_position = Vector2(1.1281915, 1.1281915)
 shader_parameter/cumulus_texture = ExtResource("9_rwt1y")
 shader_parameter/cumulus_partial_mie_phase = Vector3(0.957564, 1.042436, 0.412)
 shader_parameter/cumulus_mie_intensity = 1.0
@@ -110,7 +111,6 @@ tonemap_white = 6.0
 glow_bloom = 1.0
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0155
-adjustment_enabled = true
 adjustment_brightness = 0.78
 adjustment_saturation = 0.78
 
@@ -125,6 +125,12 @@ point_count = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kwl8l"]
 vertex_color_use_as_albedo = true
+metallic = 1.0
+metallic_texture = ExtResource("14_kwl8l")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_xiqgv"]
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_waglr"]
 
 [node name="World" type="Node3D"]
 
@@ -210,4 +216,6 @@ terrain_height_multiplier = 200.0
 terrain_color_steepness_curve = SubResource("Curve_8l3nt")
 terrain_material = SubResource("StandardMaterial3D_kwl8l")
 distant_terrain_mesh_resolution = 0.30000000000000004
+multimesh_noise = SubResource("FastNoiseLite_xiqgv")
+multimesh_mesh = SubResource("RibbonTrailMesh_waglr")
 metadata/_custom_type_script = "uid://ccxw2cc2mpkl8"

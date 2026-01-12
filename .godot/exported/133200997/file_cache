@@ -2,5 +2,6 @@ res://Materials/Blue.tres::679a302c221e60023ce256ffebc4355a::1768141427::res://.
 res://Materials/Green.tres::5782cf27fb7bc69db3a90eb52c24db0d::1768149749::res://.godot/exported/133200997/export-777b77f2a979405ed5f9c95abd8d1b7d-Green.res
 res://Materials/Pink.tres::3ab358cf37c694047e0e82dfed12d631::1768142684::res://.godot/exported/133200997/export-4c2c8a1b85d1b0c9eb08e1890568f740-Pink.res
 res://Materials/Red.tres::1cdd15f74ba77f9148f517fb2c655e0f::1768141427::res://.godot/exported/133200997/export-7c3c6fc40b16f25bf19df7039bbcd17f-Red.res
-res://Scenes/sketchfab_scene.tscn::6b00e9db5915ba08e7adaf93b05afbcf::1768156634::res://.godot/exported/133200997/export-ab9efba08bd25855e7f2f0a57f9766fe-sketchfab_scene.scn
-res://Scenes/World.tscn::93fa3a1b46a9a83821cc91c8b1254c41::1768159810::res://.godot/exported/133200997/export-a7039bbd18786b4499c98d2e8ae6919d-World.scn
+res://Scenes/World.tscn::5029d1ee86e3a266ff7173f7aa1dc3fb::1768233603::res://.godot/exported/133200997/export-a7039bbd18786b4499c98d2e8ae6919d-World.scn
+res://addons/sky_3d/assets/resources/SNoise.tres::aef329698d0d71cef3d99dd7d08d678b::1768225379::res://.godot/exported/133200997/export-45b8f9ce13823187b17d6afe560649e0-SNoise.res
+res://addons/sky_3d/assets/resources/SunMoonLightFade.tres::55e131fd2f229dd8f9f3f76dd71c72e4::1768225379::res://.godot/exported/133200997/export-e184a938d773687c6fc99866e2f3256f-SunMoonLightFade.res

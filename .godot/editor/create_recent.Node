@@ -1,0 +1,11 @@
+CSGBox3D
+SimplestGodRay3D
+Sky3D
+DirectionalLight3D
+DirectionalLight2D      - Matches the "sun" keyword.
+WorldEnvironment
+CollisionShape3D
+StaticBody3D
+RigidBody3D
+Label
+CanvasLayer

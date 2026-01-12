@@ -1,9 +1,9 @@
+DirectionalLight3D
 WorldEnvironment
 InfiniteTerrain
 CSGBox3D
 StaticBody3D
 Sky3D
-DirectionalLight3D
 DirectionalLight2D      - Matches the "sun" keyword.
 CollisionShape3D
 RigidBody3D
